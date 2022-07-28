@@ -1,18 +1,19 @@
 import './App.css'
-
+var name = "<h2>M.Ameen<h2>"
 function App() {
   return (
+    <>
     <nav className="navbar container-fluid navbar-expand-md navbar-light bg-light">
       <div className='container-fluid'>
         <div className='container-fluid'>
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             Navbar
           </a>
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             About
           </a>
-          <a className="navbar-brand" href="#">
-            Contact Us
+          <a className="navbar-brand" href="/">
+            contact us
           </a>
         </div>
       </div>
@@ -33,6 +34,8 @@ function App() {
         </form>
       </div>
     </nav>
+    <h2>{name}</h2>
+    </>
   )
 }
 
