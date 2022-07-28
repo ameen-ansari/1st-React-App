@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types'
+
 
 export default function Navbar(props) {
   return (
@@ -12,7 +14,7 @@ export default function Navbar(props) {
             {props.about}
           </a>
           <a className="navbar-brand" href="/">
-            contact us
+            {props.contactus}
           </a>
         </div>
       </div>
@@ -35,11 +37,14 @@ export default function Navbar(props) {
     </nav>
   )
 }
-// Navbar.propsTypes = {
-//     name : PropsTypes.string,
-//     about:PropsTypes.string
-//   }
-  
-Navbar.propsTypes = {
-    name: PropsTypes.string
-  };
+
+Navbar.propTypes = {
+  name:PropTypes.string,
+  about:PropTypes.string,
+}
+
+Navbar.defaultProps = {
+  name:'Navbar',
+  contactus:'Contact us',
+  about:'About'
+}
