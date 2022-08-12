@@ -19,7 +19,7 @@ export default function Textarea() {
   }
   let select = () => {
     navigator.clipboard.writeText(text)
-    settext('copied')
+    settext("")
     
   }
   return (
@@ -46,13 +46,13 @@ export default function Textarea() {
         </button>
       </div>
       <div className="container">
-        <h2>Your Notes</h2>
-        <p>{text}</p>
-      </div>
       <div className="container">
-        <p>Letters = {text.length}</p>
-        <p>worlds = {(text.length === 0)? 0 : text.split(' ').length}</p>
+        <h2>Your Notes</h2>
         <p>Reading Time = approx {text.length * 0.00361} Mins</p>
+        <p>worlds = {(text.length === 0)? 0 : text.split(' ').length}</p>
+        <p>Letters = {text.length}</p>
+      </div>
+        <p>{text}</p>
       </div>
     </div>
   )
