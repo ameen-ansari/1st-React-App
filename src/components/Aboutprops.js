@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Pro(props) {
   return (
     <div>
-    <p>My name is {props.name}.My father Name is {props.fname}.I am from  {props.addres}</p>
+    <h1 className="text-center">Welcome To My First React App</h1>
     </div>
   )
 }

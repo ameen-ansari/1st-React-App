@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function Textarea() {
-  const [text, settext] = useState('Input here')
+  const [text, settext] = useState('')
   let textarea = (a) => {
     settext(a.target.value)
   }
@@ -30,6 +30,7 @@ export default function Textarea() {
         onChange={textarea}
         rows="8"
         placeholder="Enter Your text here"
+        className="rounded border-0  texta h-25"
       ></textarea>
       <div className="w-75 mx-auto d-flex justify-content-between">
         <button className="btn btn-primary" onClick={toupper}>
@@ -47,12 +48,12 @@ export default function Textarea() {
       </div>
       <div className="container">
       <div className="container">
-        <h2>Your Notes</h2>
-        <p>Reading Time = approx {text.length * 0.00361} Mins</p>
-        <p>worlds = {(text.length === 0)? 0 : text.split(' ').length}</p>
+        <h3 className="my-4">Your Notes Info:</h3>
+        <p>Reading Time = approx {(text.length * 0.00361).toFixed(2)} Mins</p>
+        <p>worlds = {text.split(' ').filter((e)=>e !== "").length}</p>
         <p>Letters = {text.length}</p>
-      </div>
-        <p>{text}</p>
+      </div >
+        <p className="container w-100 ">{text}</p>
       </div>
     </div>
   )

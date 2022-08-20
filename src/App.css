@@ -1,3 +1,9 @@
-.jhfd {
-    text-align: center;
+#body{
+    background-color:rgb(126,130,132);
+    color : white;
+}
+.texta{
+    color : white;
+    background-color:rgb(118,181,197,0.6);
+    outline:0;
 }
