@@ -24,7 +24,7 @@ var xyzz = () => {
   <>
       <h2 className="text-center my-5">Set Body BackGround Random</h2>
     <div className='d-flex flex-column'>
-        <input value={rgb} className={`input bg-light w-25 mx-auto d-block rounded`}  disabled />
+        <input value={rgb} className={`input bg-light mx-auto d-block rounded`}  disabled />
         <button className="btn btn-primary w-50 m-auto mt-4" onClick={xyzz}>Click for Show rendom backgrounds</button>
     </div>
     </>

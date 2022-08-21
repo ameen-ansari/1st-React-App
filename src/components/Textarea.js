@@ -23,28 +23,32 @@ export default function Textarea() {
     
   }
   return (
-    <div className="w-50 mx-auto mt-3 bg">
+    <div className="parenttexta mx-auto mt-3 bg">
       <textarea
         cols="70"
         value={text}
         onChange={textarea}
         rows="8"
         placeholder="Enter Your text here"
-        className="rounded border-0  texta h-25"
+        className="w-100 rounded border-0  texta h-25"
       ></textarea>
-      <div className="w-75 mx-auto d-flex justify-content-between">
-        <button className="btn btn-primary" onClick={toupper}>
+      <div className="w-75 mx-auto justify-content-center parentbtns">
+        <div>
+        <button className="btn btn-primary m-1 " onClick={toupper}>
           To Upper
         </button>
-        <button className="btn btn-primary" onClick={tolower}>
+        <button className="btn btn-primary m-1 " onClick={tolower}>
           To Lower
         </button>
-        <button className="btn btn-primary" onClick={clear}>
+        </div>
+        <div>
+        <button className="btn btn-primary m-1 " onClick={clear}>
           Clear
         </button>
-        <button className="btn btn-primary" onClick={select}>
+        <button className="btn btn-primary m-1 " onClick={select}>
         Copy
         </button>
+        </div>
       </div>
       <div className="container">
       <div className="container">
